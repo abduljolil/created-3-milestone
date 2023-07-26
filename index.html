@@ -22,21 +22,22 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                 primary: '#F85559',
+                 bg: '#F85559',
+                 
               }
             }
-          }
+          },
         }
       </script>
 
 </head>
 <body class=".lato">
     <header>
-        <nav class=" "> 
-         <div class="flex justify-center items-center">
-          <div class="navbar bg-base-100">
+        <nav class="container mx-auto "> 
+         <div class="  ">
+          <div class="navbar  bg-bg flex sm:flex-col md:flex-row gap-14 px-12 rounded-full">
             <div class="navbar-start">
-              <div class=" sm:dropdown ">
+              <div class="  dropdown ">
                 <label tabindex="0" class="btn btn-ghost btn-circle md: hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </label>
@@ -49,14 +50,14 @@
               </div>
             </div>
             <div class="navbar-center">
-              <a class="btn btn-ghost normal-case text-xl">
+              <a class="flex justify-center items-center">
                 <img src="./images/logo.png" alt="">
                 <h1 class="text-[40px] font-bold">Fruit Burst</h1>
               </a>
             </div>
-            <div class=" ">
+            <div class=" rounded-full ">
               <div class=" relative ">
-               <input  type="text" placeholder="Search here" class="input input-bordered" class=" rounded-l-2xl"/>
+               <input  type="text" placeholder="Search here" class="input input-bordered" />
                 <button class=" absolute items-center right-6 top-3">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 </button>
@@ -65,9 +66,53 @@
           </div>
          </div>
         </nav>
+        <!-- bennar section -->
+        <div class=" container mx-auto mt-14">
+          <div class="carousel w-full">
+  <div id="slide1" class="carousel-item relative w-full" style="background-image: url(/images/banner1.png);">
+   <div class="grid justify-center items-end text-white mx-auto">
+    <h class="text-7xl font-extrabold text-center">Exotic tastes at your
+      <br> doorstep</h>
+      <p class="text-center">We supply highly quality organic products</p>
+     <div class=" flex justify-center items-center pb-24"> <button class="btn btn-error text-center">Shop Now</button></div>
+   </div>
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide2" class="carousel-item relative w-full">
+    <img src="/images/banner2.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" class="carousel-item relative w-full">
+    <img src="/images/banner2.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" class="carousel-item relative w-full">
+    <img src="/images/banner4.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
+        </div>
     </header>
     <main>
-
+      <section class="container mx-auto">
+        <div class="flex justify-between">
+          <div class="">
+            h2.text-5xl.font-extra
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
         
